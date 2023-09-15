@@ -1,0 +1,20 @@
+server:
+  port: 8030
+
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:dbPracticalChallenge  
+    username: admin
+    password: admin123  
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true  # Habilitar o console H2
+      path: /h2-console  # Caminho de acesso ao console H2
